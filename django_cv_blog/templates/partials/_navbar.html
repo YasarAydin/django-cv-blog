@@ -1,0 +1,57 @@
+{% load static %}
+<!-- start of sidenav -->
+<aside><div class="sidenav position-sticky d-flex flex-column justify-content-between">
+    <a class="navbar-brand" href="index.html" class="logo">
+        <img src="{% static 'images/post/logo.png' %}" alt="">
+    </a>
+    <!-- end of partials-brand -->
+
+    <div class="navbar navbar-dark my-4 p-0 font-primary">
+        <ul class="navbar-nav w-100">
+            <li class="nav-item active">
+                <a class="nav-link text-white px-0 pt-0" href="{% url 'index' %}">Ana Sayfa</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white px-0" href="about.html">Hakkımda</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white px-0" href="{% url 'contact' %}">İletişim</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white px-0" href="{% url 'kategoriler' %}">Kategoriler</a>
+            </li>
+            <li class="nav-item mt-3">
+                <select class="custom-select bg-transparent rounded-0 text-white shadow-none" id="pick-lang">
+                    <option selected value="en">English</option>
+                    <option value="fr">French</option>
+                </select>
+            </li>
+        </ul>
+    </div>
+    <!-- end of partials -->
+
+    <ul class="list-inline nml-2">
+        <li class="list-inline-item">
+            <a href="#!" class="text-white text-red-onHover pr-2">
+                <span class="fab fa-twitter"></span>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a href="#!" class="text-white text-red-onHover p-2">
+                <span class="fab fa-facebook-f"></span>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a href="#!" class="text-white text-red-onHover p-2">
+                <span class="fab fa-instagram"></span>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a href="#!" class="text-white text-red-onHover p-2">
+                <span class="fab fa-linkedin-in"></span>
+            </a>
+        </li>
+    </ul>
+    <!-- end of social-links -->
+</div></aside>
+<!-- end of sidenav -->
